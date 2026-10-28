@@ -1,0 +1,120 @@
+@media only screen and (min-width: 640px) {
+
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+.hamburger {
+    display: none;
+}
+
+.navigation {
+    display: block;
+    border-bottom: solid 1px #eee;
+    background-color: #3D405B;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation a {
+    border: none;
+}
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 2fr 300px;
+    column-gap: 10px;
+    
+}
+
+.profile {
+    display: block;
+    border: 1px solid #ddd;
+    background: #ccc;
+}
+
+.profile h2, 
+.photo h2 {
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    background: #3D405B;
+    margin-top: 0;
+
+}
+
+.profile p {
+    padding: 10px;
+    font-size: large;
+}
+
+.photo {
+    border: 1px solid #ddd;
+    background: #ccc;
+}
+
+.photo img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 15px;
+}
+
+.course h2 {
+    border: 1px solid #ddd;
+    text-align: center;
+    background: #dab0a4;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .75rem;
+    margin-top: .5rem;
+}
+
+.course-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Completed courses */
+.course-card.completed {
+    background-color: #f0eed9;
+    color: #252525;
+}
+
+/* Incomplete courses */
+.course-card.not-completed {
+    background-color: #E07A5F;
+    color: #252525;
+}
+
+.credit-total {
+    text-align: center;
+    font-weight: normal;
+    color: #252525;
+    padding: .5rem;
+    margin: 1rem 0;
+    background: transparent;
+}
+
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="Priscilla Gyasiwaa Sarpong">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+        <span>Priscilla Gyasiwaa Sarpong</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <div class="profile-content">
+            <Section class="profile">
+                <h2>About Me</h2>
+                <p>I am Priscilla Gyasiwaa Sarpong. I am a Ghanaian and I'm studying Software Development at BYU-Idaho through BYU-Pathway Worldwide.
+                    I love to code and travel around the world. My favorite color is blue. I love to meet new people, share my experiences with them,
+                    and learn from theirs. Follow me as I embark on this journey to become your favorite and trusting Web developer.
+                </p>
+            </Section>
+
+            <section class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Priscilla Sarpong">
+            </section>
+            
+        </div>
+
+        <section class="courses">
+                <h2>Web Certificate Courses</h2>
+                <div class="filters" aria-label="Filter courses">
+                    <button type="button" class="filter-btn active" data-filter="all">
+                    All Courses
+                    </button>
+                    <button type="button" class="filter-btn" data-filter="WDD">
+                    WDD Courses
+                    </button>
+                    <button type="button" class="filter-btn" data-filter="CSE">
+                    CSE Courses
+                    </button>
+                </div>
+
+                <p id="course-count" aria-live="polite"></p>
+
+                <div id="course-content" class="course-grid"></div>
+
+                <p id="credit-total" class="credit-total" aria-live="polite"></p>
+            </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://facebook.com/priscillagyasiwaaofficial" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16px" height="16px"></a>
+            <a href="https://linkedin.com/priscillagyasiwaa" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16px" height="16px"></a>
+            <a href="https://github.com/psarpong-tech" target="_blank"><img src="images/github.svg" alt="Github" width="16px" height="16px"></a>
+            <a href="https://youtube.com/@PSMediatales" target="_blank"><img src="images/youtube.svg" alt="YouTube" width="16px" height="16px"></a>
+        </div>
+
+        <div class="footer-p">
+            <p>©️ <span id="currentyear"></span> 🌴 Priscilla Gyasiwaa Sarpong 🌴 Ghana</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
