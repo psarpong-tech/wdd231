@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Goaso Chamber of Commerce emblem">
+  <circle cx="256" cy="256" r="226" fill="#081e44"/>
+  <circle cx="256" cy="256" r="204" fill="none" stroke="#d6a84b" stroke-width="10"/>
+  <path d="M112 218 256 126l144 92v22H112z" fill="#d6a84b"/>
+  <path d="M132 250h248v118H132z" fill="#fff"/>
+  <path d="M154 250v118m51-118v118m51-118v118m51-118v118m51-118v118" stroke="#081e44" stroke-width="16"/>
+  <path d="M116 385h280" stroke="#d6a84b" stroke-width="18" stroke-linecap="round"/>
+  <path d="M176 409h160" stroke="#2f8b57" stroke-width="13" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Directory | Goaso Chamber of Commerce</title>
+
+  <meta name="description" content="Explore the directory of the member businesses of the Goaso Chamber of Commerce.">
+  <meta name="author" content="Priscilla Gyasiwaa Sarpong">
+
+  <link rel="icon" href="favicon1.ico">
+
+  <meta property="og:title" content="Directory | Goaso Chamber of Commerce">
+  <meta property="og:description" content="Explore the directory of the member businesses of the Goaso Chamber of Commerce.">
+  <meta property="og:image" content="https://psarpong-tech.github.io/wdd231/chamber/images/logo.svg">
+  <meta property="og:url" content="https://psarpong-tech.github.io/wdd231/chamber/directory.html">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small-directory.css">
+  <link rel="stylesheet" href="styles/large-directory.css">
+  <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Chamber logo" width="48" height="48">
+    <span>Goaso Chamber of Commerce</span>
+    <button id="menu" aria-label="Menu">&#9776;</button>
+    <nav>
+      <a href="#">Home</a>
+      <a href="directory.html" class="active">Directory</a>
+      <a href="#">Join</a>
+      <a href="#">Discover</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Directory</h1>
+    <div class="view-buttons">
+      <button id="grid" class="active">Grid</button>
+      <button id="list">List</button>
+    </div>
+    
+    <div id="members" class="grid"></div>
+  </main>
+
+  <footer>
+    <section>
+      <div class="address">
+        <p><strong>Goaso Chamber of Commerce</strong></p>
+        <p>SSNIT Avenue</p>
+        <p>Goaso, Ghana</p>
+        <p>info@goasocc.gov</p>
+        <p>025-685-2276</p>
+      </div>
+
+      <div class="social">
+        <a href="https://facebook.com/priscillagyasiwaaofficial" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="32" height="32"></a>
+        <a href="https://linkedin.com/priscillagyasiwaa" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="32" height="32"></a>
+        <a href="https://github.com/psarpong-tech" target="_blank"><img src="images/github.svg" alt="Github" width="32" height="32"></a>
+      </div>
+
+      <div class="project-info">
+        <p>WDD231 Class Project</p>
+        <p>Priscilla Gyasiwaa Sarpong</p>
+        <p> ©️ <span id="currentyear"></span> Goaso Chamber of Commerce</p>
+        <p id="lastModified"></p>
+      </div>  
+    </section>
+  </footer>
+</body>
+</html>
+

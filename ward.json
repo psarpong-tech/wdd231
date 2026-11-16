@@ -1,0 +1,29 @@
+
+{
+    "family name":"Santos",
+    "moveInDate":"2023-11-21",
+    "numberOfPeople":7,
+    "visitedByBishopric":true,
+    "familyMembers":[
+        {
+        "name":"Ama Santos",
+        "gender":"Female",
+        "birthDate":"2020-09-01"
+        },
+        {
+            "name":"Derick Santos",
+            "gender":"Male",
+            "birthDate":"2015-11-01"
+        },
+        {
+            "name":"Oppong Santos",
+            "gender":"Male",
+            "birthDate":"2012-04-21"
+        },
+        {
+            "name":"Yaa Santos",
+            "gender":"Female",
+            "birthDate":"2002-02-11"
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Masada Local Restaurant",
+    "tagline": "Good Food, Great Experience",
+    "address": "Atta Mills Road, Riverside",
+    "phone": "(256) 554-4376",
+    "website": "https://masadarestaurant.com",
+    "image": "masada-restaurant.webp",
+    "membership": 2
+  },
+  {
+    "name": "Gasty Bakery and Café",
+    "tagline": "Freshly Baked, Lovingly Served",
+    "address": "Dantanoh Street, Buroniyaya",
+    "phone": "(206) 125-0142",
+    "website": "https://gastybakes.com",
+    "image": "gasty-bakes.webp",
+    "membership": 3
+  },
+  {
+    "name": "Pogasty Publications",
+    "tagline": "Where Knowledge Finds Its Voice",
+    "address": "Municipal Assembly Avenue, Brade",
+    "phone": "(203) 245-5301",
+    "website": "https://pogastypub.com",
+    "image": "pogasty-pub.webp",
+    "membership": 1
+  },
+  {
+    "name": "Africa Hardware",
+    "tagline": "Quality Supplies, Stronger Foundations",
+    "address": "Omanhene Street, SSNIT",
+    "phone": "(540) 935-6213",
+    "website": "https://africahards.com",
+    "image": "africa-hardware.webp",
+    "membership": 3
+  },
+  {
+    "name": "PS Business Consultations",
+    "tagline": "Your Vision, Our Strategic Guidance",
+    "address": "New Station, Kukuom",
+    "phone": "(503) 001-4362",
+    "website": "https://psconsult.com",
+    "image": "ps-consults.webp",
+    "membership": 2
+  },
+  {
+    "name": "Sarpong Farms",
+    "tagline": "Growing Nature, Feeding Communities",
+    "address": "Mallam Junction, Waterlog",
+    "phone": "(208) 425-3206",
+    "website": "https://sarpongfarm.com",
+    "image": "sarpong-farms.webp",
+    "membership": 1
+  },
+  {
+    "name": "Wadada Hotel and Pub",
+    "tagline": "Your Comfort, Our Priority",
+    "address": "Atta Mills Road, Kwantanan",
+    "phone": "(256) 545-2267",
+    "website": "https://wadadahotel.com",
+    "image": "wadada-hotel.webp",
+    "membership": 3
+  },
+  {
+    "name": "Everest Block Factory",
+    "tagline": "Quality Blocks, Lasting Structures",
+    "address": "Royals Avenue, Kukuom",
+    "phone": "(206) 435-0032",
+    "website": "https://everestblock.com",
+    "image": "everest-blocks.webp",
+    "membership": 1
+  },
+  {
+    "name": "Greens Office Plants",
+    "tagline": "Greener Spaces, Happier Places",
+    "address": "Old Station, Kwanten",
+    "phone": "(253) 145-5472",
+    "website": "https://greenplants.com",
+    "image": "greens-plants.webp",
+    "membership": 2
+  }
+]
