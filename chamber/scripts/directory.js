@@ -27,7 +27,7 @@ function displayMembers(data) {
           alt="${member.name} logo" 
           width="96" 
           height="96"
-        >
+          loading="lazy"
 
         <div class="business-info">
           <p><strong>ADDRESS:</strong> ${member.address}</p>
