@@ -2,11 +2,17 @@ const members = document.querySelector('#members');
 const levels = ['Member', 'Silver', 'Gold']; // membership 1, 2, 3
 
 async function getMembers() {
-  const response = await fetch('data/members.json');
-  const data = await response.json();
-  displayMembers(data);
+  try{
+    const response = await fetch('data/members.json');
+    if (!response.ok) {
+      throw new Error('Request failed with status ${response.status}');
+    }
+    const data = await response.json();
+    displayMembers(data);
+  } catch (error) {
+    console.error(error);
+  }  
 }
-
 
 function displayMembers(data) {
   members.innerHTML = "";
