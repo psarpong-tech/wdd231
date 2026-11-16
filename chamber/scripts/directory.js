@@ -27,7 +27,7 @@ function displayMembers(data) {
           alt="${member.name} logo" 
           width="96" 
           height="96"
-          loading="lazy"
+          loading="lazy">
 
         <div class="business-info">
           <p><strong>ADDRESS:</strong> ${member.address}</p>
@@ -50,11 +50,23 @@ function displayMembers(data) {
 getMembers();
 
 // grid / list toggle
-document.querySelector('#grid').addEventListener('click', () => { 
-  members.className = 'grid'; 
+const gridButton = document.querySelector('#grid');
+const listButton = document.querySelector('#list');
+
+// Grid view
+gridButton.addEventListener('click', () => {
+  members.className = 'grid';
+
+  gridButton.classList.add('active');
+  listButton.classList.remove('active');
 });
-document.querySelector('#list').addEventListener('click', () => { 
-  members.className = 'list'; 
+
+// List view
+listButton.addEventListener('click', () => {
+  members.className = 'list';
+
+  listButton.classList.add('active');
+  gridButton.classList.remove('active');
 });
 
 

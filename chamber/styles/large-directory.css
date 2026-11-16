@@ -1,49 +1,71 @@
-@media (min-width: 620px) {
-  #menu { display: none; }
 
-  header, footer {
-    max-width: 80rem;
+/* ==============================
+   LARGE SCREEN STYLES
+================================= */
+
+@media screen and (min-width: 40rem) {
+
+  /* Header and navigation */
+
+  #menu {
+    display: none;
+  }
+
+  header {
+    max-width: var(--width);
     margin: 0 auto;
+  }
+
+  nav {
+    display: flex;
+    width: auto;
+  }
+
+  nav a {
+    padding: 0.75rem 1rem;
+  }
+
+  /* List view */
+
+  #members.list .member-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #members.list .card-header {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+    border-bottom: none;
+    border-right: 2px solid #aaa;
+    height: 100%;
+  }
+
+  #members.list .card-content {
+    display: block;
     padding: 1rem;
   }
 
-  nav { 
-    display: flex; 
-    width: auto; 
-    }
+  /* Footer */
 
-  .list section { 
-    display: grid; 
-    grid-template-columns: 2fr 2fr 1fr 2fr 1fr; 
-    gap: 1rem; 
-    align-items: center; 
-    }
+  footer {
+    padding: 1rem;
+  }
 
   footer section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+    max-width: var(--width);
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
 
-.social {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 1rem;
-  margin: 1rem 0;
-}
-
-.social a {
-  width: 32px;
-  height: 32px;  
-}
-
-.social a:hover {
-    background-color: #000;
-}
-
-.footer-p {
-  height: 90px;
-  padding-top: 10px;
-}
-
+  .social {
+    flex-wrap: nowrap;
+    margin: 1rem 0;
+  }
 }
