@@ -83,6 +83,7 @@ const courseContent = document.querySelector("#course-content");
 const courseCount = document.querySelector("#course-count");
 const creditTotal = document.querySelector("#credit-total");
 const filterButtons = document.querySelectorAll(".filter-btn");
+const courseDetails = document.querySelector('#course-details');
 
 // Store the currently selected filter.
 let currentFilter = "all";
@@ -94,7 +95,7 @@ function displayCourses(courseList) {
 
   // Create a card for every course in the filtered array.
   
-courseList.forEach((course) => {
+  courseList.forEach((course) => {
     const card = document.createElement("div");
 
     card.classList.add("course-card");
@@ -107,11 +108,12 @@ courseList.forEach((course) => {
         card.textContent = `${course.subject} ${course.number}`;
     }
 
+    card.addEventListener('click', () => {
+      displayCourseDetails(course);
+    });
+
     courseContent.appendChild(card);
 });
-
-
-
 
   // Update the number of courses being displayed.
   courseCount.textContent =
@@ -161,3 +163,28 @@ filterButtons.forEach((button) => {
 
 // Display all courses when the page first loads.
 filterCourses(currentFilter);
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML =`
+    <button id="closeModal" aria-label="Close">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+
+  courseDetails.showModal();
+
+  courseDetails.querySelector('#closeModal').addEventListener('click', () => {
+    courseDetails.close();
+  });
+}
+
+courseDetails.addEventListener('click', (event) => {
+  if (event.target === courseDetails) {
+    courseDetails.close();
+  }
+});
+
