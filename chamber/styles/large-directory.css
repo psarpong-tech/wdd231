@@ -13,7 +13,8 @@
     margin: 0 auto;
   }
 
-  .navigation, .navigation ul {
+  .navigation, 
+  .navigation ul {
     display: flex;
   }
 
@@ -22,7 +23,6 @@
   }
 
   .navigation a {
-    border: none;
     padding: 0.75rem 1rem;
   }
 
@@ -77,9 +77,6 @@
 
   .spotlight-content img {
     flex-basis: 35%;
-    width: 35%;
-    max-width: 160px;
-    height: 140px;
   }
 
   /* Footer */
