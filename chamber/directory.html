@@ -23,6 +23,10 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small-directory.css">
   <link rel="stylesheet" href="styles/large-directory.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
   <script src="scripts/directory.js" defer></script>
 </head>
 
@@ -30,12 +34,14 @@
   <header>
     <img src="images/logo.svg" alt="Chamber logo" width="48" height="48">
     <span>Goaso Chamber of Commerce</span>
-    <button id="menu" aria-label="Menu">&#9776;</button>
-    <nav>
-      <a href="#">Home</a>
-      <a href="directory.html" class="active">Directory</a>
-      <a href="#">Join</a>
-      <a href="#">Discover</a>
+    <button id="ham-btn" class="hamburger" aria-label="Open navigation menu" aria-expanded="false"></button>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Discover</a></li>
+      </ul>
     </nav>
   </header>
 

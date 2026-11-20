@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Goaso Chamber of Commerce</title>
+
+    <meta name="description" content="Explore the directory of the member businesses of the Goaso Chamber of Commerce.">
+  <meta name="author" content="Priscilla Gyasiwaa Sarpong">
+
+  <link rel="icon" href="favicon1.ico">
+
+  <meta property="og:title" content="Directory | Goaso Chamber of Commerce">
+  <meta property="og:description" content="Explore the directory of the member businesses of the Goaso Chamber of Commerce.">
+  <meta property="og:image" content="https://psarpong-tech.github.io/wdd231/chamber/images/goaso-chamber.png">
+  <meta property="og:url" content="https://psarpong-tech.github.io/wdd231/chamber/directory.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small-directory.css">
+  <link rel="stylesheet" href="styles/large-directory.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Chamber logo" width="48" height="48">
+    <span>Goaso Chamber of Commerce</span>
+    <button id="ham-btn" class="hamburger" aria-label="Open navigation menu" aria-expanded="false"></button>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero-image">
+        <img src="images/background-image.jpg" alt="Whitewater Rafting Adventure">    
+        <nav class="cta">
+            <a href="#" class="btn">JOIN OUR COMMUNITY</a>
+        </nav>
+    </div>
+    <section id="current-events"></section>
+
+    <section id="current-weather">
+        <h2>Weather</h2>
+        <p>Current temperature in Goaso, Ghana: <span id="current-temp"></span></p>
+        <figure>
+            <img id="weather-icon" src="" alt="">
+            <figcaption></figcaption>
+        </figure>
+
+        <div id="forecast">
+            <p>3 - Day Forecast</p>
+
+        </div>
+    </section>
+
+    <section id="spotlights"></section>
+  </main> 
+
+  <footer>
+    <section>
+      <div class="address">
+        <p><strong>Goaso Chamber of Commerce</strong></p>
+        <p>SSNIT Avenue</p>
+        <p>Goaso, Ghana</p>
+        <p>info@goasocc.gov</p>
+        <p>025-685-2276</p>
+      </div>
+
+      <div class="social">
+        <a href="https://facebook.com/priscillagyasiwaaofficial" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="32" height="32"></a>
+        <a href="https://linkedin.com/priscillagyasiwaa" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="32" height="32"></a>
+        <a href="https://github.com/psarpong-tech" target="_blank"><img src="images/github.svg" alt="Github" width="32" height="32"></a>
+      </div>
+
+      <div class="project-info">
+        <p>WDD231 Class Project</p>
+        <p>Priscilla Gyasiwaa Sarpong</p>
+        <p> ©️ <span id="currentyear"></span> Goaso Chamber of Commerce</p>
+        <p id="lastModified"></p>
+      </div>  
+    </section>
+  </footer>
+  </footer>
+</body>
+</html>

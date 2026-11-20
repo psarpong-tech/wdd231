@@ -1,19 +1,24 @@
 const members = document.querySelector('#members');
 const levels = ['Member', 'Silver', 'Gold']; // membership 1, 2, 3
 
+// Get the Members
 async function getMembers() {
   try{
     const response = await fetch('data/members.json');
+
     if (!response.ok) {
-      throw new Error('Request failed with status ${response.status}');
+      throw new Error(`Request failed with status ${response.status}`);
     }
+
     const data = await response.json();
     displayMembers(data);
+
   } catch (error) {
     console.error(error);
   }  
 }
 
+// Display the members
 function displayMembers(data) {
   members.innerHTML = "";
 
@@ -52,7 +57,7 @@ function displayMembers(data) {
   });
 }
 
-
+//Load the members
 getMembers();
 
 // grid / list toggle
@@ -74,17 +79,3 @@ listButton.addEventListener('click', () => {
   listButton.classList.add('active');
   gridButton.classList.remove('active');
 });
-
-
-// mobile menu
-document.querySelector('#menu').addEventListener('click', () => {
-  document.querySelector('nav').classList.toggle('open');
-});
-
-// footer
-const currentYear = new Date().getFullYear();
-
-document.getElementById("currentyear").textContent = currentYear;
-
-document.getElementById("lastModified").textContent =
-    "Last Modification: " + document.lastModified;
