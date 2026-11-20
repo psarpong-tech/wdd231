@@ -3,8 +3,8 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const foreCast = document.querySelector('#forecast');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=6.77&lon=-2.51&units=imperial&appid=152244ba5249fb05375dc185127adf47';
-const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?units=imperial&lat=6.77&lon=-2.51&appid=152244ba5249fb05375dc185127adf47';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=6.77&lon=-2.51&units=metric&appid=152244ba5249fb05375dc185127adf47';
+const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?units=metric&lat=6.77&lon=-2.51&appid=152244ba5249fb05375dc185127adf47';
 
 
 async function apiFetch() {
@@ -12,7 +12,7 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
         const data = await response.json();
-        displayResults(data);
+        displayApiResults(data);
        } else {
         throw new Error(await response.text());
        }
@@ -28,7 +28,7 @@ async function forecastFetch (){
         const forecastResponse = await fetch(forecastURL);
         if(forecastResponse.ok){
             const forecastData = await forecastResponse.json();
-            displayForecast(forecastData);
+            displayForecastResults(forecastData);
         } else{
             throw new Error(await forecastResponse.text())
         }
@@ -39,8 +39,8 @@ async function forecastFetch (){
 
 forecastFetch();
 
-function displayResults(data) {
-    currentTemperature.innerHTML = `${data.main.temp}&deg;F`;
+function displayApiResults(data) {
+    currentTemperature.innerHTML = `${data.main.temp}&deg;C`;
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     const desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
@@ -48,14 +48,18 @@ function displayResults(data) {
     captionDesc.textContent = desc;
 }
 
-const displayForecast = (days) => {
+const displayForecastResults = (days) => {
     const threeDays = days.list.filter((item) => item.dt_txt.includes("18:00:00")).slice(0, 3);
+
+    foreCast.innerHTML = '';
+
     threeDays.forEach((day) => {
-        let card = document.createElement('section');
-        let min = document.createElement('p');
-        let max = document.createElement('p');
-        let date = document.createElement('p');
-        let icon = document.createElement('img');
+        const card = document.createElement('section');
+        const date = document.createElement('h3');
+        const temperatures = document.createElement('div');
+        const min = document.createElement('p');
+        const max = document.createElement('p');
+        const icon = document.createElement('img');
     
         const readableDate = new Date(day.dt * 1000).toLocaleDateString('en-US', {
             weekday: 'short',
@@ -63,19 +67,25 @@ const displayForecast = (days) => {
             day: 'numeric'
         });
 
+        date.textContent = readableDate;
 
-        min.innerHTML = `Low: ${day.main.temp_min}`;
-        max.innerHTML = `High: ${day.main.temp_max}`;
-        date.innerHTML = readableDate;
+        min.innerHTML = `Low: ${Math.round(day.main.temp_min)}&deg;C`;
+        max.innerHTML = `High: ${Math.round(day.main.temp_max)}&deg;C`;
 
         icon.setAttribute('src', `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`);
         icon.setAttribute('alt', day.weather[0].description);
+        icon.setAttribute('loading', 'lazy');
 
-        card.appendChild(min);
-        card.appendChild(max);
+        card.classList.add('forecast-card');
+        temperatures.classList.add('temperatures');
+
+        temperatures.appendChild(min);
+        temperatures.appendChild(max);
+
         card.appendChild(date);
+        card.appendChild(temperatures);
         card.appendChild(icon);
 
         foreCast.appendChild(card);
     });
- }
+ };

@@ -1,13 +1,10 @@
-
 /* ==============================
-   LARGE SCREEN STYLES
+  LARGE SCREEN STYLES
 ================================= */
-
-@media screen and (min-width: 40rem) {
-
+@media screen and (min-width: 680px) {
   /* Header and navigation */
 
-  #menu {
+  .hamburger {
     display: none;
   }
 
@@ -19,10 +16,6 @@
   .navigation {
     display: flex;
     width: auto;
-  }
-
-  .hamburger {
-    display: none;
   }
 
   .navigation ul {
@@ -45,7 +38,6 @@
   #members.list .card-header {
     display: flex;
     flex-direction: column;
-    margin: 0;
     padding: 1rem;
     border-bottom: none;
     border-right: 2px solid #aaa;
@@ -57,10 +49,38 @@
     padding: 1rem;
   }
 
-  .hero-image {
-    position: relative;
-    border: 1px solid var(--medium-gray);
-    margin: 20px 0;   
+  #current-events {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--spacing-medium);
+  }
+
+  #current-events h2 {
+    grid-column: 1 / -1;
+  }
+
+  #forecast {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  #spotlights {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-medium);
+  }
+
+  #spotlights h2 {
+    grid-column: 1 / -1;
+  }
+
+  .spotlight-content img {
+    flex-basis: 35%;
+    width: 35%;
+    max-width: 160px;
+    height: 140px;
   }
 
   /* Footer */

@@ -1,7 +1,7 @@
 const members = document.querySelector('#members');
 const levels = ['Member', 'Silver', 'Gold']; // membership 1, 2, 3
 
-// Get the Members
+// Get the Members from members.json
 async function getMembers() {
   try{
     const response = await fetch('data/members.json');
@@ -57,7 +57,6 @@ function displayMembers(data) {
   });
 }
 
-//Load the members
 getMembers();
 
 // grid / list toggle
