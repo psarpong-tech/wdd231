@@ -1,5 +1,5 @@
 const currentTemperature = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
+const weatherFigure = document.querySelector('#current-weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const foreCast = document.querySelector('#forecast');
 
@@ -41,10 +41,17 @@ forecastFetch();
 
 function displayApiResults(data) {
     currentTemperature.innerHTML = `${data.main.temp}&deg;C`;
+
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     const desc = data.weather[0].description;
+
+    const weatherIcon = document.createElement('img');
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    weatherIcon.setAttribute('width', '90');
+    weatherIcon.setAttribute('height', '70');
+
+    weatherFigure.prepend(weatherIcon);
     captionDesc.textContent = desc;
 }
 
