@@ -46,6 +46,8 @@ function displaySpotlights(members) {
         logo.setAttribute('src', `images/${member.image}`);
         logo.setAttribute('alt', `${member.name} logo`);
         logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('width', '160');
+        logo.setAttribute('height', '140');
 
         // Company details
         name.textContent = member.name;
