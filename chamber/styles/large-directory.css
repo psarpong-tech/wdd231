@@ -13,13 +13,12 @@
     margin: 0 auto;
   }
 
-  .navigation {
+  .navigation, .navigation ul {
     display: flex;
-    width: auto;
   }
 
-  .navigation ul {
-    display: flex;
+  .navigation {
+    width: auto;
   }
 
   .navigation a {
