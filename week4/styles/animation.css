@@ -20,6 +20,15 @@
     animation: pulse 1.5s ease-in-out infinite;
 }
 
+@keyframes spin {
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes pulse {
+    0%, 100% {transform: translate(-50%, -50% ) scale(1);}
+    50% {transform: translate(-50%, -50%) scale(1.25);}
+}
+
 .loader-t {
 
     position: relative;
@@ -29,17 +38,18 @@
     border: 5px solid transparent;
     border-color: #999 transparent #999 transparent;
     border-radius: 50%;
-    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
-}
-
-.loader-t {
-  transition: transform 1.5s linear;
+    transition: transform 1.5s linear;
+    box-shadow: 0 0 2rem rgb(0 0 255 / 40%);
 }
 
 .loader-t::after {
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 1.5s ease-in-out;
-  font-size: 2rem;
+    content: '⚙️'; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1.5s ease-in-out;
+    font-size: 2rem;
 }
 
 .loader-t:hover {
@@ -51,13 +61,18 @@
 }
 
 
-@keyframes spin {
-    100% {transform: rotate(360deg);}
-}
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
 
-@keyframes pulse {
-    0%, 100% {transform: translate(-50%, -50% ) scale(1);}
-    50% {transform: translate(-50%, -50%) scale(1.25);}
+  .loader,
+  .loader::after {
+    animation: none;
+  }
+
+  .loader-t,
+  .loader-t::after {
+    transition: none;
+  }
 }
 
 
