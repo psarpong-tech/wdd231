@@ -8,7 +8,8 @@
     display: none;
   }
 
-  header {
+  header,
+  footer section {
     max-width: var(--width);
     margin: 0 auto;
   }
@@ -31,13 +32,13 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    gap: 1rem;
+    gap: var(--spacing-medium);
   }
 
   #members.list .card-header {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: var(--spacing-medium);
     border-bottom: none;
     border-right: 2px solid #aaa;
     height: 100%;
@@ -45,7 +46,7 @@
 
   #members.list .card-content {
     display: block;
-    padding: 1rem;
+    padding: var(--spacing-medium);
   }
 
   #current-events {
@@ -54,7 +55,8 @@
     gap: var(--spacing-medium);
   }
 
-  #current-events h2 {
+  #current-events h2,
+  #spotlights h2 {
     grid-column: 1 / -1;
   }
 
@@ -62,17 +64,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    gap: 1.5rem;
+    gap: var(--spacing-large);
   }
 
   #spotlights {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--spacing-medium);
-  }
-
-  #spotlights h2 {
-    grid-column: 1 / -1;
   }
 
   .spotlight-content img {
@@ -111,21 +109,19 @@
 
   .thanks {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: var(--spacing-large);
   }
 
   /* Footer */
   footer {
-    padding: 1rem;
+    padding: var(--spacing-medium);
   }
 
   footer section {
-    max-width: var(--width);
-    margin: 0 auto;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 1rem;
+    gap: var(--spacing-medium);
   }
 
   .social {

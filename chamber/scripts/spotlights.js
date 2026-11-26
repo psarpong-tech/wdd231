@@ -24,9 +24,14 @@ function displaySpotlights(members) {
     );
 
     // Randomly shuffle the qualified members
-    const shuffledMembers = qualifiedMembers.sort(
-        () => Math.random() - 0.5
-    );
+    const shuffledMembers = [...qualifiedMembers];
+
+    for (let i = shuffledMembers.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+
+    [shuffledMembers[i], shuffledMembers[j]] =
+        [shuffledMembers[j], shuffledMembers[i]];
+}
 
     // Randomly choose two members
     const numberOfSpotlights = 2;

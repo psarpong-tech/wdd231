@@ -1,10 +1,15 @@
-// Store the Selected elements that we are going to use.
-const navbutton = document.querySelector('#ham-btn');
-const navlinks = document.querySelector('#nav-bar');
+const navButton = document.querySelector('#ham-btn');
+const navLinks = document.querySelector('#nav-bar');
 
-//Toggle the show class off and on
-navbutton.addEventListener('click', () => {
-    navbutton.classList.toggle('show');
-    navlinks.classList.toggle('show');
+navButton.addEventListener('click', () => {
+    const isExpanded = navButton.classList.toggle('show');
+
+    navLinks.classList.toggle('show');
+
+    navButton.setAttribute('aria-expanded', isExpanded);
+    navButton.setAttribute(
+        'aria-label',
+        isExpanded ? 'Close navigation menu' : 'Open navigation menu'
+    );
 });
 

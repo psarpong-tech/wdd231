@@ -44,7 +44,8 @@ function displayMembers(data) {
           <p><strong>ADDRESS:</strong> ${member.address}</p>
           <p><strong>PHONE:</strong> ${member.phone}</p>
           <p><strong>URL:</strong> 
-            <a href="${member.website}" target="_blank">
+            <a href="${member.website}" target="_blank"
+            rel="noopener noreferrer">
               ${member.website}
             </a>
           </p>
