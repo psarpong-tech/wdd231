@@ -1,0 +1,61 @@
+
+[
+    {
+        "name": "Non Profit Membership",
+        "image": "images/np-membership.webp",
+        "description": "Free membership for registered nonprofit organizations.",
+        "benefits": [
+            "Access to chamber networking events",
+            "Community development opportunities",
+            "Business networking resources"
+        ],
+        "cost": ["Free"]
+    },
+    {
+        "name": "Bronze Membership",
+        "image": "images/bronze-membership.webp",
+        "description": "An affordable option for growing businesses.",
+        "benefits": [
+            "Access to networking events",
+            "Basic business training",
+            "Event participation discounts"
+        ],
+        "cost": [
+        "GHS₵100/month",
+        "GHS₵1,000/year"
+        ]   
+        
+    },
+    {
+        "name": "Silver Membership",
+        "image": "images/silver-membership.webp",
+        "description": "Additional opportunities to promote your business.",
+        "benefits": [
+            "All Bronze benefits",
+            "Business advertising opportunities",
+            "Featured homepage spotlight opportunities",
+            "Discounted training sessions"
+        ],
+        "cost": [
+        "GHS₵150/month",
+        "GHS₵1,500/year"
+        ]
+    },
+    {
+        "name": "Gold Membership",
+        "image": "images/gold-membership.webp",
+        "description": "Our premium membership for established businesses.",
+        "benefits": [
+            "All Silver benefits",
+            "Priority homepage spotlight placement",
+            "Premium advertising opportunities",
+            "Exclusive networking events",
+            "Priority access to business training",
+            "Free annual business trips"
+        ],
+        "cost": [
+        "GHS₵300/month",
+        "GHS₵3,000/year"
+        ]
+    }
+]

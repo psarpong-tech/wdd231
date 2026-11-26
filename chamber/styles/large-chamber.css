@@ -79,6 +79,41 @@
     flex-basis: 35%;
   }
 
+  .join-container {
+    grid-template-columns: 1.5fr 1fr;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  .join-form {
+    padding: 2rem;
+  }
+
+  .join-form form {
+    
+    box-sizing: border-box;
+    justify-content: space-around;
+  }
+
+  #membership-container {
+    grid-template-columns: 1fr;
+  }
+
+  #member-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
+  }
+
+  .thanks {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
   /* Footer */
   footer {
     padding: 1rem;
