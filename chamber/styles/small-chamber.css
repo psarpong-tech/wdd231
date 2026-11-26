@@ -495,8 +495,8 @@ border: 1px solid var(--border);
 /* Form and membership layout */
 .join-container {
   display: grid;
-  gap: var(--spacing-small);
-  margin: var(--spacing-small) auto;
+  gap: var(--spacing-largr);
+  margin: var(--spacing-medium) auto;
 }
 
 .join-form, 
