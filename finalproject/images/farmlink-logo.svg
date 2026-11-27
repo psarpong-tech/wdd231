@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 180" role="img" aria-labelledby="title desc">
+  <title id="title">FarmLink logo</title>
+  <desc id="desc">A green sprout growing between two connected field curves, beside the FarmLink wordmark.</desc>
+  <g transform="translate(18 12)">
+    <rect x="0" y="0" width="156" height="156" rx="34" fill="#247A45"/>
+    <path d="M24 112 C48 91 70 91 92 112 C111 129 132 126 143 114" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M24 132 C48 111 70 111 92 132 C111 149 132 146 143 134" fill="none" stroke="#DFF0E3" stroke-width="7" stroke-linecap="round"/>
+    <path d="M78 106 C77 83 81 62 94 43" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+    <path d="M91 61 C65 59 51 44 53 26 C76 25 94 39 91 61Z" fill="#DFF0E3"/>
+    <path d="M93 53 C96 31 114 18 136 22 C137 44 119 59 93 53Z" fill="#F2C14E"/>
+    <path d="M92 61 C92 43 104 32 119 28" fill="none" stroke="#247A45" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+  <text x="198" y="91" font-family="Poppins, Arial, sans-serif" font-size="66" font-weight="700" letter-spacing="-2" fill="#247A45">Farm<tspan fill="#26332B">Link</tspan></text>
+  <text x="202" y="128" font-family="Open Sans, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="2.4" fill="#247BA0">CONNECTING FARMERS. GROWING OPPORTUNITIES.</text>
+</svg>

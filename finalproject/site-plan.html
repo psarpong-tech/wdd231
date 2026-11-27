@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FarmLink website plan: a Ghana-focused agricultural marketplace and weather-informed farming resource connecting farmers and buyers.">
+  <meta name="author" content="Priscilla Gyasiwaa Sarpong">
+  <meta property="og:title" content="FarmLink | Website Site Plan">
+  <meta property="og:description" content="Planning document for FarmLink, an agricultural marketplace and weather-informed farming resource.">
+  <meta property="og:type" content="website">
+  <title>FarmLink | Website Site Plan</title>
+
+  <link rel="icon" href="images/favicon (1).ico" type="image/svg+xml">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/site-plan.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="brand" href="#top" aria-label="FarmLink site plan home">
+        <span class="brand-visual" aria-hidden="true">F</span>
+        <span>Farm<span class="brand-name">Link</span></span>
+      </a>
+      <p class="header-note">FarmLink Website Project · Site Plan</p>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="main-head">
+      <div class="hero-accent">
+        <p class="eyebrow">Growing connections. Creating opportunities.</p>
+        <h1 id="main-head">FarmLink</h1>
+
+        <p class="tagline">Connecting Farmers. Growing Opportunities.</p>
+        <p class="hero-description">
+          A Ghana-focused agricultural platform that connects farmers with buyers
+          and makes useful weather and crop-market information easier to access.
+        </p>
+        <a class="explore-plan" href="#site-purpose">Explore the plan</a>
+      </div>
+
+      <div class="hero-image" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="field back"></div>
+        <div class="field front"></div>
+        <div class="sprout">✦</div>
+      </div>
+    </section>
+
+    <nav class="section-nav" aria-label="Site plan sections">
+      <a href="#site-name">Site name</a>
+      <a href="#site-purpose">Purpose</a>
+      <a href="#scenarios">Scenarios</a>
+      <a href="#colors">Colors</a>
+      <a href="#typography">Typography</a>
+      <a href="#wireframes">Wireframes</a>
+      <a href="#pages">Page plan</a>
+    </nav>
+
+    <section class="content-section" id="site-name">
+      <p class="section-kicker">01 · Identity</p>
+      <h2>Site Name</h2>
+
+      <div class="content-card">
+        <h3>FarmLink</h3>
+        <p><strong>Tagline:</strong> Connecting Farmers. Growing Opportunities.</p>
+
+        <p>
+          The name combines “farm” and “link” to communicate the website’s central
+          purpose: linking farmers to buyers, agricultural information, market
+          opportunities, and useful resources. It is short, memorable, and broad
+          enough to support additional agricultural services in the future.
+        </p>
+
+        <p><strong>Proposed domain:</strong> <code>farmlinkghana.com</code></p>
+      </div>
+
+    </section>
+
+    <section class="content-section" id="site-purpose">
+      <p class="section-content">02 · What the website does</p>
+      <h2>Site Purpose</h2>
+      <p>
+        FarmLink is a Ghana-focused agricultural information and produce
+        marketplace platform. It aims to connect farmers directly with potential
+        buyers while helping farmers use weather information as one input in
+        their planting decisions.
+      </p>
+
+      <div class="purpose-container">
+        <article class="purpose-card">
+          <span class="purpose-icon" aria-hidden="true">☁</span>
+          <h3>Weather-informed guidance</h3>
+
+          <p>
+            Show current weather and a five-day forecast for a selected location.
+            Present general planting considerations and crop information based
+            on available weather data and regional growing guidance.
+          </p>
+        </article>
+
+        <article class="purpose-card">
+          <span class="purpose-icon" aria-hidden="true">🌱</span>
+          <h3>Farmer listings</h3>
+
+          <p>
+            Let farmers submit their contact details, location, preferred contact
+            method, and information about crops they have available for sale.
+          </p>
+        </article>
+        
+        <article class="purpose-card">
+          <span class="purpose-icon" aria-hidden="true">🧺</span>
+          <h3>Produce marketplace</h3>
+
+          <p>
+            Help buyers browse produce by crop, price, quantity, location, and
+            descriptive quality category, then send a purchase or supply request.
+          </p>
+        </article>
+
+        <article class="purpose-card">
+          <span class="purpose-icon" aria-hidden="true">🚚</span>
+          <h3>Pickup and delivery choices</h3>
+
+          <p>
+            Allow buyers to state when they need produce and whether they prefer
+            farm or market pickup or delivery. Any delivery charge or discount
+            will be clearly identified.
+          </p>
+        </article>
+      </div>
+
+      <p class="development-notice">
+        <strong>Project scope:</strong> The WDD231 version will be a front-end
+        prototype using JavaScript, a weather API, and local JSON data. Form
+        submissions can be displayed on a form action page, but the project will
+        not claim to provide live payments, verified transactions, user accounts,
+        or real delivery bookings.
+      </p>
+    </section>
+
+    <section class="content-section" id="scenarios">
+      <p class="section-content">03 · Audience needs</p>
+      <h2>Scenarios</h2>
+
+      <p>These questions represent information visitors may come to FarmLink to find.</p>
+
+      <div class="scenario-list">
+
+        <article class="scenario">
+          <span class="scenario-number">01</span>
+          <p>What crops may be suitable to plant in my area, considering the current weather and the forecast for the next five days?</p>
+        </article>
+
+        <article class="scenario">
+          <span class="scenario-number">02</span>
+          <p>Where can I find buyers for the maize, cassava, tomatoes, or other crops I have harvested?</p>
+        </article>
+
+        <article class="scenario">
+          <span class="scenario-number">03</span>
+          <p>Which crops are currently available, where are they located, and what are their prices and quality categories?</p>
+        </article>
+
+        <article class="scenario">
+          <span class="scenario-number">04</span>
+          <p>How can I request a particular quantity of produce and arrange pickup or delivery for a specific date?</p>
+        </article>
+
+        <article class="scenario">
+          <span class="scenario-number">05</span>
+          <p>How can I register as a farmer and list my available crops with my contact and location details?</p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <section class="content-section" id="colors">
+      <p class="section-content">04 · Visual identity</p>
+      <h2>Color Scheme</h2>
+
+      <p>
+        FarmLink will use a natural, welcoming palette. Green is the dominant
+        brand color because it represents agriculture, growth, and freshness.
+        Blue supports weather-related information and trust, while yellow adds
+        warmth and draws attention to selected highlights.
+      </p>
+
+      <div class="color-grid">
+
+        <article class="color-card">
+          <div class="swatch forest"></div>
+          <h3>Forest Green</h3>
+
+          <code>#247A45</code>
+          <p>Primary brand color, main headings, buttons, and important links.</p>
+        </article>
+
+        <article class="color-card">
+          <div class="swatch soft-green"></div>
+          <h3>Soft Green</h3>
+
+          <code>#DFF0E3</code>
+          <p>Soft section backgrounds, information panels, and card highlights.</p>
+        </article>
+
+        <article class="color-card">
+          <div class="swatch sky-blue"></div>
+          <h3>Sky Blue</h3>
+
+          <code>#247BA0</code>
+          <p>Weather panels, forecast details, and secondary links.</p>
+        </article>
+
+        <article class="color-card">
+          <div class="swatch harvest-yellow"></div>
+          <h3>Harvest Yellow</h3>
+
+          <code>#F2C14E</code>
+          <p>Small accents, promotions, badges, and attention cues.</p>
+        </article>
+
+        <article class="color-card">
+          <div class="swatch white"></div>
+          <h3>White</h3>
+
+          <code>#FFFFFF</code>
+          <p>Main page background, cards, and space around content.</p>
+        </article>
+
+        <article class="color-card">
+          <div class="swatch charcoal"></div>
+          <h3>Dark Charcoal</h3>
+
+          <code>#26332B</code>
+          <p>Body text, footer background, and high-contrast content.</p>
+        </article>
+
+      </div>
+
+      <p class="accessibility-note">
+        Text and background combinations will be checked for sufficient contrast.
+        Color will not be the only way important information is communicated.
+      </p>
+    </section>
+
+    <section class="content-section" id="typography">
+      <p class="section-content">05 · Readability</p>
+      <h2>Typography</h2>
+
+      <div class="samples">
+
+        <article class="samples-card">
+          <p class="font-label">Headings · Poppins</p>
+          <h3 class="poppins">Growing better, together.</h3>
+
+          <p>
+            Poppins will be used for the logo text, page titles, section headings,
+            navigation, and buttons. Its clear geometric shapes give the brand a
+            modern and approachable appearance.
+          </p>
+
+          <code>font-family: "Poppins", sans-serif;</code>
+        </article>
+
+        <article class="samples-card">
+          <p class="font-label">Body text · Open Sans</p>
+          <p class="opensans">
+
+            FarmLink helps farmers share available produce and helps buyers
+            discover crops, compare listing details, and make requests.
+          </p>
+
+          <p>
+            Open Sans will be used for paragraphs, crop descriptions, forecast
+            information, form labels, and other content that needs to remain
+            comfortable to read on mobile and desktop screens.
+          </p>
+
+          <code>font-family: "Open Sans", sans-serif;</code>
+        </article>
+
+      </div>
+
+    </section>
+
+    <section class="content-section" id="wireframes">
+      <p class="section-content">06 · Homepage structure</p>
+      <h2>Wireframes</h2>
+
+      <p>
+        The following black-and-white structural wireframes show the planned
+        homepage layout at mobile and desktop sizes. They focus on content
+        placement and page structure rather than final colors, images, or styling.
+      </p>
+
+      <div class="wf-layout">
+        <article class="wf-panel">
+          <h3>Small viewport · Mobile</h3>
+
+          <div class="wireframe mobile-wireframe" aria-label="Mobile homepage wireframe">
+            <div class="wf-header">
+              <b>FarmLink logo</b>
+              <span>☰</span>
+            </div>
+
+            <div class="wf-block wf-hero">
+              <b>Hero / Welcome</b>
+              <small>Introductory message</small>
+              <small>Marketplace and Join buttons</small>
+            </div>
+
+            <div class="wf-block">
+              <b>Weather dashboard</b>
+              <small>Location selector</small>
+              <small>Current weather</small>
+              <small>Five-day forecast</small>
+              <small>Planting guidance</small>
+            </div>
+
+            <div class="wf-block">
+              <b>Featured crops</b>
+              <small>Crop card</small>
+              <small>Crop card</small>
+              <small>View marketplace link</small>
+            </div>
+
+            <div class="wf-block">
+              <b>About FarmLink</b>
+              <small>Purpose and how it works</small>
+            </div>
+
+            <div class="wf-footer">
+              Footer · Contact · Attributions · Video
+            </div>
+
+          </div>
+
+          <p class="wireframe-caption">Single-column layout with a collapsible navigation menu and vertically stacked content.</p>
+        </article>
+
+        <article class="wf-panel">
+          <h3>Large viewport · Desktop</h3>
+          <div class="wireframe desktop-wireframe" aria-label="Desktop homepage wireframe">
+
+            <div class="wf-header">
+              <b>FarmLink logo</b>
+              <span>
+                Home&nbsp;&nbsp; Marketplace&nbsp;&nbsp; Join FarmLink
+              </span>
+            </div>
+
+            <div class="wf-hero-row">
+              <div class="wf-block wf-hero">
+                <b>Hero / Welcome</b>
+                <small>Introductory message</small>
+                <small>Call-to-action buttons</small>
+              </div>
+
+              <div class="wf-block wf-image">
+                <b>Featured image</b>
+                <small>Agricultural image area</small>
+              </div>
+
+            </div>
+
+            <div class="wf-block">
+              <b>Weather dashboard</b>
+              <small>
+                Location · Current conditions · Five-day forecast · Planting guidance
+              </small>
+            </div>
+
+            <div class="wf-block">
+              <b>Featured crops</b>
+
+              <div class="wf-crop-row">
+                <span>Crop card 1</span>
+                <span>Crop card 2</span>
+                <span>Crop card 3</span>
+              </div>
+
+            </div>
+
+            <div class="wf-block">
+              <b>About FarmLink / How it works</b>
+              <small>Purpose and visitor guidance</small>
+            </div>
+
+            <div class="wf-footer">
+              Footer · Contact · Attributions · Video
+            </div>
+
+          </div>
+
+          <p class="wireframe-caption">Horizontal navigation, a two-column hero area, and wider content sections.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="content-section" id="pages">
+      <p class="section-content">07 · Planned site structure</p>
+      <h2>Three Project Pages</h2>
+
+      <div class="page-plan">
+
+        <article class="page-card">
+          <span class="page-label">Page 1</span>
+          <h3>Home · <code>index.html</code></h3>
+
+          <ul>
+            <li>FarmLink introduction and purpose</li>
+            <li>Location-based current weather and five-day forecast</li>
+            <li>General weather-informed planting guidance</li>
+            <li>Featured and sought-after crop listings</li>
+            <li>About FarmLink and how it works</li>
+          </ul>
+        </article>
+
+        <article class="page-card">
+          <span class="page-label">Page 2</span>
+          <h3>Marketplace · <code>marketplace.html</code></h3>
+
+          <ul>
+            <li>At least 15 crop listings generated from JSON data</li>
+            <li>Crop name, price, quantity, location, and quality</li>
+            <li>Search and filtering by crop, location, price, and grade</li>
+            <li>Accessible modal with more crop details</li>
+            <li>Farmer contact or request instructions where provided</li>
+          </ul>
+        </article>
+
+        <article class="page-card">
+          <span class="page-label">Page 3</span>
+          <h3>Join FarmLink · <code>join.html</code></h3>
+
+          <ul>
+            <li>Farmer registration and crop listing form</li>
+            <li>Buyer produce request form without mandatory account creation</li>
+            <li>Location, quantity, required date, and contact preferences</li>
+            <li>Pickup or delivery selection and clearly explained fees</li>
+            <li>Form action page to display submitted form data</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <h3 class="subheading">Planned crop quality categories</h3>
+      <div class="quality-cards">
+
+        <div class="quality-item">
+          <b>Premium</b>
+          <p>
+            Well-sorted produce with excellent appearance and minimal defects.
+          </p>
+        </div>
+
+        <div class="quality-item">
+          <b>Standard</b>
+          <p>
+            Good-quality produce that may have minor imperfections.
+          </p>
+        </div>
+
+        <div class="quality-item">
+          <b>Basic</b>
+          <p>
+            Acceptable produce with more visible imperfections, clearly described to buyers.
+          </p>
+        </div>
+
+      </div>
+      <p class="development-notice">
+        These are descriptive categories for the FarmLink prototype, not official
+        agricultural certification or Ghana Standards Authority grades.
+      </p>
+    </section>
+
+    <section class="content-section implementation" id="implementation">
+      <p class="section-content">08 · Development approach</p>
+      <h2>Planned JavaScript Features</h2>
+
+      <ul class="feature-list">
+        <li><strong>Fetch API and asynchronous requests:</strong> Retrieve weather data from Open-Meteo and crop listings from a local JSON file.</li>
+        <li><strong>Error handling:</strong> Use async functions with try...catch blocks and response checks to handle failed requests.</li>
+        <li><strong>Dynamic content:</strong> Generate at least 15 crop listings, each showing at least four data properties.</li>
+        <li><strong>Local storage:</strong> Save non-sensitive preferences such as a selected weather location or recently viewed crop IDs.</li>
+        <li><strong>Modal dialog:</strong> Open an accessible crop-details dialog with a clear close action and keyboard support.</li>
+        <li><strong>DOM and events:</strong> Use querySelector/querySelectorAll, event listeners, and DOM updates for search, filters, forms, and navigation.</li>
+        <li><strong>Array methods and template literals:</strong> Use methods such as filter, map, and forEach to process data and template literals to create listing markup.</li>
+        <li><strong>ES modules:</strong> Organize code into separate modules for weather, marketplace, and form behavior.</li>
+      </ul>
+
+      <p class="development-notice">
+        Weather-based crop suggestions will be presented as general guidance, not
+        guarantees. Weather forecasts alone cannot determine planting suitability;
+        soil conditions, rainfall history, crop variety, and local agricultural
+        advice also matter.
+      </p>
+
+    </section>
+
+    <section class="content-section" id="sources">
+      <p class="section-content">09 · Reference material</p>
+      <h2>Planning References</h2>
+
+      <ul class="reference-list">
+        <li><a href="https://open-meteo.com/">Open-Meteo</a> — proposed weather data source.</li>
+        <li><a href="https://fonts.google.com/">Google Fonts</a> — Poppins and Open Sans font families.</li>
+        <li><a href="https://www.websitebuilderexpert.com/designing-websites/how-to-choose-color-for-your-website/">Website Builder Expert</a> — color scheme planning reference.</li>
+        <li><a href="https://design.google/library/choosing-web-fonts-beginners-guide/">Google Design</a> — web typography planning reference.</li>
+        <li><a href="https://byui-cse.github.io/cse-ww-program/student/dev-standards.html">BYU-Idaho Development Standards</a> — development standards.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>FarmLink</strong> · Connecting Farmers. Growing Opportunities.</p>
+    <p>Website planning document · WDD231 Individual Website Project</p>
+    <p>Prepared by Priscilla Gyasiwaa Sarpong</p>
+  </footer>
+</body>
+</html>
